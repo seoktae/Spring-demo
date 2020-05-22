@@ -14,7 +14,8 @@ public class MemongApplication {
     private Logger logger = LoggerFactory.getLogger(ApplicationRunner.class);
 
     public static void main(String[] args) {
-        SpringApplication.run(MemongApplication.class, args);
+        SpringApplication application = new SpringApplication(MemongApplication.class);
+        application.run(args);
     }
 
 }

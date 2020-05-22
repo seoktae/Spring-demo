@@ -22,7 +22,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         http.authorizeRequests()
-                .antMatchers("/user/join", "/user/idcheck/**")
+                .antMatchers("/user/join", "/user/idcheck/**", "/h2-console/**")
                 .permitAll()
                 .anyRequest()
                 .hasRole("USER")

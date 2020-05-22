@@ -6790,3 +6790,187 @@ Caused by: javax.persistence.NonUniqueResultException: query did not return a un
 2020-05-22 17:40:59.915  INFO 17508 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2020-05-22 17:40:59.916  INFO 17508 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2020-05-22 17:40:59.922  INFO 17508 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2020-05-22 17:50:14.907  INFO 11092 --- [main] com.example.memong.MemongApplication     : Starting MemongApplication on DESKTOP-OQDU29R with PID 11092 (C:\Users\sts\IdeaProjects\memong\target\classes started by sts in C:\Users\sts\IdeaProjects\memong)
+2020-05-22 17:50:14.907  INFO 11092 --- [main] com.example.memong.MemongApplication     : No active profile set, falling back to default profiles: default
+2020-05-22 17:50:15.994  INFO 11092 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-05-22 17:50:16.051  INFO 11092 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 49ms. Found 1 JPA repository interfaces.
+2020-05-22 17:50:16.499  INFO 11092 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-05-22 17:50:16.499  INFO 11092 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-05-22 17:50:16.499  INFO 11092 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-05-22 17:50:16.499  INFO 11092 --- [main] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.21] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+2020-05-22 17:50:16.499  INFO 11092 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded APR based Apache Tomcat Native library [1.2.21] using APR version [1.6.5].
+2020-05-22 17:50:16.499  INFO 11092 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2020-05-22 17:50:16.499  INFO 11092 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2020-05-22 17:50:16.514  INFO 11092 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1a  20 Nov 2018]
+2020-05-22 17:50:16.608  INFO 11092 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-05-22 17:50:16.608  INFO 11092 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1639 ms
+2020-05-22 17:50:16.717  INFO 11092 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-05-22 17:50:16.780  INFO 11092 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-05-22 17:50:16.842  INFO 11092 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-05-22 17:50:16.919  INFO 11092 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-05-22 17:50:17.125  INFO 11092 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-05-22 17:50:17.241  INFO 11092 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-05-22 17:50:17.722  INFO 11092 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-05-22 17:50:17.722  INFO 11092 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-22 17:50:17.784  WARN 11092 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-05-22 17:50:18.153  INFO 11092 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/css/**'], []
+2020-05-22 17:50:18.153  INFO 11092 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/js/**'], []
+2020-05-22 17:50:18.153  INFO 11092 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/images/**'], []
+2020-05-22 17:50:18.154  INFO 11092 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/favicon.ico'], []
+2020-05-22 17:50:18.181  INFO 11092 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@111cba40, org.springframework.security.web.context.SecurityContextPersistenceFilter@5b48f0f4, org.springframework.security.web.header.HeaderWriterFilter@72c9ebfa, org.springframework.security.web.authentication.logout.LogoutFilter@52ecc989, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@794240e2, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5bfc79cb, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@656842bc, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@48e41b5d, org.springframework.security.web.session.SessionManagementFilter@747f6c5a, org.springframework.security.web.access.ExceptionTranslationFilter@5bb8e6fc, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@194012a2]
+2020-05-22 17:50:18.309  INFO 11092 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-22 17:50:18.364  INFO 11092 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-05-22 17:50:18.489  INFO 11092 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-05-22 17:50:18.505  INFO 11092 --- [main] com.example.memong.MemongApplication     : Started MemongApplication in 4.217 seconds (JVM running for 5.171)
+2020-05-22 17:50:29.008  INFO 11092 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-22 17:50:29.008  INFO 11092 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-05-22 17:50:29.016  INFO 11092 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
+2020-05-22 18:07:22.604  INFO 19556 --- [main] com.example.memong.MemongApplication     : Starting MemongApplication on DESKTOP-OQDU29R with PID 19556 (C:\Users\sts\IdeaProjects\memong\target\classes started by sts in C:\Users\sts\IdeaProjects\memong)
+2020-05-22 18:07:22.606  INFO 19556 --- [main] com.example.memong.MemongApplication     : No active profile set, falling back to default profiles: default
+2020-05-22 18:07:23.603  INFO 19556 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-05-22 18:07:23.710  INFO 19556 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 91ms. Found 1 JPA repository interfaces.
+2020-05-22 18:07:24.637  INFO 19556 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-05-22 18:07:24.653  INFO 19556 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-05-22 18:07:24.653  INFO 19556 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-05-22 18:07:24.653  INFO 19556 --- [main] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.21] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+2020-05-22 18:07:24.653  INFO 19556 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded APR based Apache Tomcat Native library [1.2.21] using APR version [1.6.5].
+2020-05-22 18:07:24.653  INFO 19556 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2020-05-22 18:07:24.653  INFO 19556 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2020-05-22 18:07:24.669  INFO 19556 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1a  20 Nov 2018]
+2020-05-22 18:07:24.914  INFO 19556 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-05-22 18:07:24.914  INFO 19556 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2245 ms
+2020-05-22 18:07:25.146  INFO 19556 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-05-22 18:07:25.248  INFO 19556 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-05-22 18:07:25.370  INFO 19556 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-05-22 18:07:25.544  INFO 19556 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-05-22 18:07:25.937  INFO 19556 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-05-22 18:07:26.069  INFO 19556 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-05-22 18:07:26.691  INFO 19556 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-05-22 18:07:26.697  INFO 19556 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-22 18:07:26.744  WARN 19556 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-05-22 18:07:27.304  INFO 19556 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/css/**'], []
+2020-05-22 18:07:27.304  INFO 19556 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/js/**'], []
+2020-05-22 18:07:27.304  INFO 19556 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/images/**'], []
+2020-05-22 18:07:27.304  INFO 19556 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/favicon.ico'], []
+2020-05-22 18:07:27.335  INFO 19556 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@cbf1997, org.springframework.security.web.context.SecurityContextPersistenceFilter@756808cc, org.springframework.security.web.header.HeaderWriterFilter@46468f0, org.springframework.security.web.authentication.logout.LogoutFilter@75793f17, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@11810917, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5012c571, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@63d677f5, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@49232c6f, org.springframework.security.web.session.SessionManagementFilter@34a6d9db, org.springframework.security.web.access.ExceptionTranslationFilter@143fefaf, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@50cdfafa]
+2020-05-22 18:07:27.481  INFO 19556 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-22 18:07:27.563  INFO 19556 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-05-22 18:07:27.717  INFO 19556 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-05-22 18:07:27.719  INFO 19556 --- [main] com.example.memong.MemongApplication     : Started MemongApplication in 5.794 seconds (JVM running for 6.921)
+2020-05-22 18:10:27.677  INFO 11224 --- [main] com.example.memong.MemongApplication     : Starting MemongApplication on DESKTOP-OQDU29R with PID 11224 (C:\Users\sts\IdeaProjects\memong\target\classes started by sts in C:\Users\sts\IdeaProjects\memong)
+2020-05-22 18:10:27.681  INFO 11224 --- [main] com.example.memong.MemongApplication     : No active profile set, falling back to default profiles: default
+2020-05-22 18:10:28.786  INFO 11224 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-05-22 18:10:28.857  INFO 11224 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 57ms. Found 1 JPA repository interfaces.
+2020-05-22 18:10:29.386  INFO 11224 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-05-22 18:10:29.396  INFO 11224 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-05-22 18:10:29.396  INFO 11224 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-05-22 18:10:29.397  INFO 11224 --- [main] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.21] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+2020-05-22 18:10:29.398  INFO 11224 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded APR based Apache Tomcat Native library [1.2.21] using APR version [1.6.5].
+2020-05-22 18:10:29.398  INFO 11224 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2020-05-22 18:10:29.398  INFO 11224 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2020-05-22 18:10:29.401  INFO 11224 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1a  20 Nov 2018]
+2020-05-22 18:10:29.530  INFO 11224 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-05-22 18:10:29.530  INFO 11224 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1777 ms
+2020-05-22 18:10:29.658  INFO 11224 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-05-22 18:10:29.842  INFO 11224 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-05-22 18:10:29.933  INFO 11224 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-05-22 18:10:30.076  INFO 11224 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-05-22 18:10:30.305  INFO 11224 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-05-22 18:10:30.406  INFO 11224 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-05-22 18:10:30.901  INFO 11224 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-05-22 18:10:30.907  INFO 11224 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-22 18:10:30.969  WARN 11224 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-05-22 18:10:31.340  INFO 11224 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/css/**'], []
+2020-05-22 18:10:31.340  INFO 11224 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/js/**'], []
+2020-05-22 18:10:31.340  INFO 11224 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/images/**'], []
+2020-05-22 18:10:31.340  INFO 11224 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/favicon.ico'], []
+2020-05-22 18:10:31.371  INFO 11224 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@46bb0bdf, org.springframework.security.web.context.SecurityContextPersistenceFilter@4fb64a52, org.springframework.security.web.header.HeaderWriterFilter@451e2fa9, org.springframework.security.web.authentication.logout.LogoutFilter@4f5f474c, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@203e705e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7b8ea1db, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@29c53c4f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@561f9d92, org.springframework.security.web.session.SessionManagementFilter@3cb6e0ee, org.springframework.security.web.access.ExceptionTranslationFilter@175c5c3a, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6aea99e7]
+2020-05-22 18:10:31.506  INFO 11224 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-22 18:10:31.574  INFO 11224 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-05-22 18:10:31.698  INFO 11224 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-05-22 18:10:31.698  INFO 11224 --- [main] com.example.memong.MemongApplication     : Started MemongApplication in 4.749 seconds (JVM running for 5.693)
+2020-05-22 18:10:41.610  INFO 11224 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-22 18:10:41.611  INFO 11224 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-05-22 18:10:41.618  INFO 11224 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
+2020-05-22 18:10:46.369 TRACE 11224 --- [http-nio-8080-exec-5] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [qwer]
+2020-05-22 18:10:46.373 TRACE 11224 --- [http-nio-8080-exec-5] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([col_0_0_] : [BIGINT]) - [0]
+2020-05-22 18:10:51.550 TRACE 11224 --- [http-nio-8080-exec-8] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [{bcrypt}$2a$10$FH98lhTIwfjAa4/8Uvb8Lu5DSukd1dN.h7cBOUV054suCcFvxXnni]
+2020-05-22 18:10:51.550 TRACE 11224 --- [http-nio-8080-exec-8] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [VARCHAR] - [qwer]
+2020-05-22 18:13:05.774  INFO 17256 --- [main] com.example.memong.MemongApplication     : Starting MemongApplication on DESKTOP-OQDU29R with PID 17256 (C:\Users\sts\IdeaProjects\memong\target\classes started by sts in C:\Users\sts\IdeaProjects\memong)
+2020-05-22 18:13:05.778  INFO 17256 --- [main] com.example.memong.MemongApplication     : No active profile set, falling back to default profiles: default
+2020-05-22 18:13:06.711  INFO 17256 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-05-22 18:13:06.761  INFO 17256 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 51ms. Found 1 JPA repository interfaces.
+2020-05-22 18:13:07.226  INFO 17256 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-05-22 18:13:07.241  INFO 17256 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-05-22 18:13:07.241  INFO 17256 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-05-22 18:13:07.241  INFO 17256 --- [main] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.21] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+2020-05-22 18:13:07.241  INFO 17256 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded APR based Apache Tomcat Native library [1.2.21] using APR version [1.6.5].
+2020-05-22 18:13:07.241  INFO 17256 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2020-05-22 18:13:07.241  INFO 17256 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2020-05-22 18:13:07.241  INFO 17256 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1a  20 Nov 2018]
+2020-05-22 18:13:07.419  INFO 17256 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-05-22 18:13:07.419  INFO 17256 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1544 ms
+2020-05-22 18:13:07.588  INFO 17256 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-05-22 18:13:07.620  INFO 17256 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-05-22 18:13:07.657  INFO 17256 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-05-22 18:13:07.704  INFO 17256 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-05-22 18:13:07.923  INFO 17256 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-05-22 18:13:08.037  INFO 17256 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-05-22 18:13:08.491  INFO 17256 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-05-22 18:13:08.491  INFO 17256 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-22 18:13:08.544  WARN 17256 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-05-22 18:13:08.919  INFO 17256 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/css/**'], []
+2020-05-22 18:13:08.919  INFO 17256 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/js/**'], []
+2020-05-22 18:13:08.920  INFO 17256 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/images/**'], []
+2020-05-22 18:13:08.920  INFO 17256 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/favicon.ico'], []
+2020-05-22 18:13:08.951  INFO 17256 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5fb54740, org.springframework.security.web.context.SecurityContextPersistenceFilter@c48b543, org.springframework.security.web.header.HeaderWriterFilter@44dfdd58, org.springframework.security.web.authentication.logout.LogoutFilter@6ad6443, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@7d133fb7, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4652c74d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@755b5f30, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@325162e9, org.springframework.security.web.session.SessionManagementFilter@72a8361b, org.springframework.security.web.access.ExceptionTranslationFilter@29d070c7, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@37d3e140]
+2020-05-22 18:13:09.077  INFO 17256 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-22 18:13:09.146  INFO 17256 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-05-22 18:13:09.309  INFO 17256 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-05-22 18:13:09.313  INFO 17256 --- [main] com.example.memong.MemongApplication     : Started MemongApplication in 4.245 seconds (JVM running for 5.378)
+2020-05-22 18:13:11.948  INFO 17256 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-22 18:13:11.949  INFO 17256 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-05-22 18:13:11.957  INFO 17256 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
+2020-05-22 18:13:14.684 TRACE 17256 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [qwer]
+2020-05-22 18:13:14.690 TRACE 17256 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([col_0_0_] : [BIGINT]) - [0]
+2020-05-22 18:13:19.430 TRACE 17256 --- [http-nio-8080-exec-5] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [{bcrypt}$2a$10$67zNXBwiWOthTGvNDuBCK.7HrPSASRm3ovu1kOSy/I5fGR.ba.aKy]
+2020-05-22 18:13:19.431 TRACE 17256 --- [http-nio-8080-exec-5] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [VARCHAR] - [qwer]
+2020-05-22 18:14:47.418  INFO 14732 --- [main] com.example.memong.MemongApplication     : Starting MemongApplication on DESKTOP-OQDU29R with PID 14732 (C:\Users\sts\IdeaProjects\memong\target\classes started by sts in C:\Users\sts\IdeaProjects\memong)
+2020-05-22 18:14:47.423  INFO 14732 --- [main] com.example.memong.MemongApplication     : No active profile set, falling back to default profiles: default
+2020-05-22 18:14:48.423  INFO 14732 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-05-22 18:14:48.476  INFO 14732 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 45ms. Found 1 JPA repository interfaces.
+2020-05-22 18:14:48.914  INFO 14732 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-05-22 18:14:48.922  INFO 14732 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-05-22 18:14:48.922  INFO 14732 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-05-22 18:14:48.923  INFO 14732 --- [main] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.21] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+2020-05-22 18:14:48.924  INFO 14732 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded APR based Apache Tomcat Native library [1.2.21] using APR version [1.6.5].
+2020-05-22 18:14:48.924  INFO 14732 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2020-05-22 18:14:48.924  INFO 14732 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2020-05-22 18:14:48.927  INFO 14732 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1a  20 Nov 2018]
+2020-05-22 18:14:49.029  INFO 14732 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-05-22 18:14:49.029  INFO 14732 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1500 ms
+2020-05-22 18:14:49.135  INFO 14732 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-05-22 18:14:49.183  INFO 14732 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-05-22 18:14:49.226  INFO 14732 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-05-22 18:14:49.282  INFO 14732 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-05-22 18:14:49.454  INFO 14732 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-05-22 18:14:49.534  INFO 14732 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-05-22 18:14:49.963  INFO 14732 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-05-22 18:14:49.969  INFO 14732 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-22 18:14:50.014  WARN 14732 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-05-22 18:14:50.366  INFO 14732 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/css/**'], []
+2020-05-22 18:14:50.367  INFO 14732 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/js/**'], []
+2020-05-22 18:14:50.367  INFO 14732 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/images/**'], []
+2020-05-22 18:14:50.367  INFO 14732 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/favicon.ico'], []
+2020-05-22 18:14:50.396  INFO 14732 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@33eb0d4, org.springframework.security.web.context.SecurityContextPersistenceFilter@2997ddfc, org.springframework.security.web.header.HeaderWriterFilter@28b523a, org.springframework.security.web.authentication.logout.LogoutFilter@2cccf134, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@6b9c42bd, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@78d73b1b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@36478bce, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@224d86d2, org.springframework.security.web.session.SessionManagementFilter@63d677f5, org.springframework.security.web.access.ExceptionTranslationFilter@539c4830, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@49232c6f]
+2020-05-22 18:14:50.524  INFO 14732 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-22 18:14:50.593  INFO 14732 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-05-22 18:14:50.729  INFO 14732 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-05-22 18:14:50.731  INFO 14732 --- [main] com.example.memong.MemongApplication     : Started MemongApplication in 4.01 seconds (JVM running for 5.038)
+2020-05-22 18:14:54.800  INFO 14732 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-22 18:14:54.800  INFO 14732 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-05-22 18:14:54.807  INFO 14732 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2020-05-22 18:14:58.648 TRACE 14732 --- [http-nio-8080-exec-5] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [qwer]
+2020-05-22 18:14:58.655 TRACE 14732 --- [http-nio-8080-exec-5] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([col_0_0_] : [BIGINT]) - [0]
+2020-05-22 18:15:03.268 TRACE 14732 --- [http-nio-8080-exec-8] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [{bcrypt}$2a$10$pMWTP9eW1w8xO9lC7WATneSRzbyJ6MAo7gK6S7SUnxSG1Aitd6hjC]
+2020-05-22 18:15:03.268 TRACE 14732 --- [http-nio-8080-exec-8] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [VARCHAR] - [qwer]
