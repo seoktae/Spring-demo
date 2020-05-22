@@ -40,4 +40,8 @@ public class UserService implements UserDetailsService {
     private Collection<? extends GrantedAuthority> authorities() {
         return Arrays.asList(new SimpleGrantedAuthority("ROLE_USER"));
     }
+
+    public int idCheck(String username) {
+        return userRepository.countUserByUserName(username);
+    }
 }

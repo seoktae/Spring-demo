@@ -4,9 +4,7 @@ import com.example.memong.entity.User;
 import com.example.memong.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.*;
 
 @Controller
 @RequestMapping("/user")
@@ -29,6 +27,12 @@ public class UserContorller {
     public String join(User user) {
         service.creatUser(user);
         return "redirect:/";
+    }
+
+    @GetMapping("/idcheck/{id}")
+    @ResponseBody
+    public int idCheck(@PathVariable("id") String username) {
+        return service.idCheck(username);
     }
 
 

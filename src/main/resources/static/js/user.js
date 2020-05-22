@@ -49,32 +49,31 @@ function pwconCheck(obj) {
     }
 }
 
-/*
-    $("#userName").blur(function(){
-        $.ajax({
-            url : "/user/idcheck/" + $("#userName").val(),
-            type : "GET",
-            success: function(result) {
-                if(result == 1) {
-                    $("#id_check").css("color","#FF5A00").html("중복된 아이디가 있습니다.");
-                    $("#idChk").val('N');
-                } else {
-                    $("#id_check").css("color","#00B050").html("사용가능합니다.");
-                    $("#idChk").val('Y');
-                }
-            },
-        })
-    });*/
+$("#userName").blur(function(){
+    $.ajax({
+        url : "/user/idcheck/" + $("#userName").val(),
+        type : "GET",
+        success: function(result) {
+            if(result == 1) {
+                $("#id_check").css("color","#FF5A00").html("중복된 아이디가 있습니다.");
+                $("#idChk").val('N');
+            } else {
+                $("#id_check").css("color","#00B050").html("사용가능합니다.");
+                $("#idChk").val('Y');
+            }
+        },
+    })
+});
 
 function insertChk() {
-       var frm=document.join_frm;
-    /*
+    var frm=document.join_frm;
+
     if($("#idChk").val() == 'N'){
-        frm.user_id.focus();
+        frm.userName.focus();
         return false;
-    }*/
+    }
     if ($("#passChk").val() == 'N') {
-        frm.user_pw.focus();
+        frm.password.focus();
         return false;
     }
     if ($("#confChk").val() == 'N') {
@@ -82,5 +81,3 @@ function insertChk() {
         return false;
     }
 }
-
-
