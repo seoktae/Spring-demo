@@ -10,6 +10,8 @@ var leapYear=[31,29,31,30,31,30,31,31,30,31,30,31];
 var notLeapYear=[31,28,31,30,31,30,31,31,30,31,30,31];
 var pageFirst = first;
 var pageYear;
+var tdGroup = [];
+
 if(first.getFullYear() % 4 === 0){
     pageYear = leapYear;
 }else{
@@ -17,6 +19,7 @@ if(first.getFullYear() % 4 === 0){
 }
 
 function showCalendar(){
+console.log('showCalendar');
     let monthCnt = 100;
     let cnt = 1;
     for(var i = 0; i < 6; i++){
@@ -37,9 +40,16 @@ function showCalendar(){
         monthCnt++;
         calendarBody.appendChild($tr);
     }
+    console.log(pageYear[first.getMonth()]);
+    currentTitle.innerHTML = monthList[first.getMonth()] + '&nbsp;&nbsp;&nbsp;&nbsp;'+ first.getFullYear();
+    showMain();
+    clickedDate1 = document.getElementById(today.getDate());
+    clickedDate1.classList.add('active');
+    clickStart();
+    reshowingList();
 }
-showCalendar();
 
+showCalendar();
 function removeCalendar(){
     let catchTr = 100;
     for(var i = 100; i< 106; i++){
@@ -116,23 +126,28 @@ function next(){
 }
 
 function showMain(){
+    console.log('showmain');
     mainTodayDay.innerHTML = dayList[today.getDay()];
     mainTodayDate.innerHTML = today.getDate();
 }
+
 var clickedDate1 = document.getElementById(today.getDate());
 clickedDate1.classList.add('active');
 var prevBtn = document.getElementById('prev');
 var nextBtn = document.getElementById('next');
 prevBtn.addEventListener('click',prev);
 nextBtn.addEventListener('click',next);
-var tdGroup = [];
+
 function clickStart(){
-    for(let i = 1; i <= pageYear[first.getMonth()]; i++){
+    console.log("clickstart");
+    for(var i = 1; i <= pageYear[first.getMonth()]; i++){
+        console.log(i);
         tdGroup[i] = document.getElementById(i);
         tdGroup[i].addEventListener('click',changeToday);
     }
 }
 function changeToday(e){
+    console.log("changeToday");
     for(let i = 1; i <= pageYear[first.getMonth()]; i++){
         if(tdGroup[i].classList.contains('active')){
             tdGroup[i].classList.remove('active');
