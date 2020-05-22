@@ -22,10 +22,10 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         http.authorizeRequests()
-                .antMatchers("/user/join")
+                .antMatchers("/user/join", "/user/idcheck/**")
                 .permitAll()
-              /*  .anyRequest()
-                .hasRole("USER")*/
+                .anyRequest()
+                .hasRole("USER")
                 .and()
                 .formLogin()
                     .loginPage("/user/login")
