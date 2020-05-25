@@ -3,6 +3,7 @@ var calendarBody = document.getElementById('calendar-body');
 var mainTodayDay = document.getElementById('main-day');
 var mainTodayDate = document.getElementById('main-date');
 var today = new Date();
+
 var first = new Date(today.getFullYear(), today.getMonth(),1);
 var dayList = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
 var monthList = ['January','February','March','April','May','June','July','August','September','October','November','December'];
@@ -46,7 +47,6 @@ console.log('showCalendar');
     clickedDate1 = document.getElementById(today.getDate());
     clickedDate1.classList.add('active');
     clickStart();
-    reshowingList();
 }
 
 showCalendar();
@@ -126,7 +126,6 @@ function next(){
 }
 
 function showMain(){
-    console.log('showmain');
     mainTodayDay.innerHTML = dayList[today.getDay()];
     mainTodayDate.innerHTML = today.getDate();
 }
@@ -139,15 +138,12 @@ prevBtn.addEventListener('click',prev);
 nextBtn.addEventListener('click',next);
 
 function clickStart(){
-    console.log("clickstart");
     for(var i = 1; i <= pageYear[first.getMonth()]; i++){
-        console.log(i);
         tdGroup[i] = document.getElementById(i);
         tdGroup[i].addEventListener('click',changeToday);
     }
 }
 function changeToday(e){
-    console.log("changeToday");
     for(let i = 1; i <= pageYear[first.getMonth()]; i++){
         if(tdGroup[i].classList.contains('active')){
             tdGroup[i].classList.remove('active');
@@ -216,7 +212,7 @@ function reshowingList(){
     }
 
 }
-var inputBox = document.getElementById('input-box');
+var inputBox = document.getElementById('content');
 var inputDate = document.getElementById('input-data');
 var inputList = document.getElementById('input-list');
 var delText = 'X';
@@ -225,28 +221,57 @@ var dataCnt = 1;
 var keyValue = today.getFullYear() + '' + today.getMonth()+ '' + today.getDate();
 let todoList = [];
 todoList[keyValue] = [];
-function addTodoList(){
+
+function addTodoList() {
     var $div = document.createElement('div');
     $div.textContent = '-' + inputBox.value;
     var $btn = document.createElement('button');
-    $btn.setAttribute('type', 'button');
-    $btn.setAttribute('id', 'del-ata');
-    $btn.setAttribute('id', dataCnt+keyValue);
-    $btn.setAttribute('class', "del-data");
-    $btn.textContent = delText;
-    inputList.appendChild($div);
-    inputList.appendChild($btn);
-    todoList[keyValue].push(inputBox.value);
-    dataCnt++;
+    // $btn.setAttribute('type', 'button');
+    // $btn.setAttribute('id', 'del-ata');
+    // $btn.setAttribute('id', dataCnt+keyValue);
+    // $btn.setAttribute('class', "del-data");
+    // $btn.textContent = delText;
+    // inputList.appendChild($div);
+    // inputList.appendChild($btn);
+    // todoList[keyValue].push(inputBox.value);
+    // dataCnt++;
     inputBox.value = '';
-    $div.addEventListener('click',checkList);
-    $btn.addEventListener('click',deleteTodo);
-    function deleteTodo(){
+    $div.addEventListener('click', checkList);
+    $btn.addEventListener('click', deleteTodo);
+
+    function deleteTodo() {
         $div.remove();
         $btn.remove();
     }
 }
-console.log(keyValue);
+$("#input-data").click(function() {
+    var dateValue = getFormatDate(today);
+    $("#todoDate").val(dateValue);
+
+
+    console.log(dateValue);
+    console.log("val : " + $("#todo").val());
+    var data = $("#input_frm").serialize();
+
+    console.log(data);
+    $.ajax({
+        url:"/insert",
+        type:"post",
+        data: data,
+        success: function(data) {
+            console.log(data);
+        }
+    });
+});
+function getFormatDate(date){
+    var year = date.getFullYear();              //yyyy
+    var month = (1 + date.getMonth());          //M
+    month = month >= 10 ? month : '0' + month;  //month 두자리로 저장
+    var day = date.getDate();                   //d
+    day = day >= 10 ? day : '0' + day;          //day 두자리로 저장
+    return  year + '' + month + '' + day;
+}
+
 function checkList(e){
     e.currentTarget.classList.add('checked');
 }

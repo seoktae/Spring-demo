@@ -4,8 +4,10 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.ToString;
+import org.springframework.data.annotation.CreatedDate;
 
 import javax.persistence.*;
+import java.time.LocalDateTime;
 
 @Entity
 @Getter
@@ -22,6 +24,9 @@ public class User {
 
     @Column
     private String password;
+
+    @CreatedDate
+    private LocalDateTime createDate;
 
 
 

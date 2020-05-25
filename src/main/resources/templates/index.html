@@ -8,6 +8,8 @@
 
     <title>Memong</title>
 
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+
 </head>
 
 <body>
@@ -21,9 +23,12 @@
             <div class="todo-wrap">
                 <div class="todo-title">Todo List</div>
                 <div class="input-wrap">
-                    <input type="text" placeholder="please write here!!" id="input-box" class="input-box">
-                    <button type="button" id="input-data" class="input-data">INPUT</button>
-                    <div id="input-list" class="input-list"></div>
+                    <form name="input_frm" id="input_frm" method="post">
+                        <input type="text" placeholder="please write here!!" id="todo" name="todo" class="input-box">
+                        <input type="hidden" value="" name="todoDate" id="todoDate">
+                        <button name="input-data" type="button" id="input-data" class="input-data">INPUT</button>
+                    </form>
+                        <div id="input-list" class="input-list"></div>
                 </div>
             </div>
         </div>
@@ -60,4 +65,14 @@
 </div>
 </body>
 <script th:src="@{/js/calendar.js}"></script>
+
+<script>
+
+
+
+// function insertData(data) {
+//
+// }
+
+</script>
 </html>
