@@ -1,7 +1,6 @@
 package com.example.memong.entity;
 
 import lombok.Getter;
-import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.ToString;
 import org.springframework.data.annotation.CreatedDate;
@@ -13,12 +12,10 @@ import java.time.LocalDateTime;
 @Getter
 @Setter
 @ToString
-public class User {
+@Table(name = "MEMBER")
+public class User extends BaseTimeEntity{
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
-
     @Column
     private String userName;
 

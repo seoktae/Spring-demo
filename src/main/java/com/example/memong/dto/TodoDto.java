@@ -15,7 +15,7 @@ import java.time.LocalDateTime;
 public class TodoDto {
 
     private Long id;
-    private String todo;
+    private String content;
 
     @DateTimeFormat(pattern = "yyyyMMdd")
     private LocalDate todoDate;
@@ -24,19 +24,19 @@ public class TodoDto {
     private String userName;
 
     public Todo toEntity(){
-        Todo todo1 = Todo.builder()
+        Todo todo = Todo.builder()
                 .id(id)
-                .todo(todo)
+                .content(content)
                 .todoDate(todoDate)
                 .userName(userName)
                 .build();
-        return todo1;
+        return todo;
     }
 
     @Builder
-    public TodoDto(Long id, String todo, LocalDate todoDate, LocalDateTime createDate, String userName) {
+    public TodoDto(Long id, String content, LocalDate todoDate, LocalDateTime createDate, String userName) {
         this.id = id;
-        this.todo = todo;
+        this.content = content;
         this.todoDate = todoDate;
         this.createDate = createDate;
         this.userName = userName;

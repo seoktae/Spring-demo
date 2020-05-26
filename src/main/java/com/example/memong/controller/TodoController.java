@@ -20,7 +20,6 @@ public class TodoController {
     @PostMapping("/insert")
     public Todo insert(TodoDto todo, Principal principal) {
         todo.setUserName(principal.getName());
-        System.out.println(todo.toString());
         return service.insert(todo);
     }
 

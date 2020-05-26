@@ -212,7 +212,7 @@ function reshowingList(){
     }
 
 }
-var inputBox = document.getElementById('content');
+var inputBox = document.getElementById('todo');
 var inputDate = document.getElementById('input-data');
 var inputList = document.getElementById('input-list');
 var delText = 'X';
@@ -250,7 +250,7 @@ $("#input-data").click(function() {
 
 
     console.log(dateValue);
-    console.log("val : " + $("#todo").val());
+    console.log("val : " + $("#content").val());
     var data = $("#input_frm").serialize();
 
     console.log(data);
