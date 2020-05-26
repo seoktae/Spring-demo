@@ -1,7 +1,6 @@
 package com.example.memong.dto;
 
 import com.example.memong.entity.Todo;
-import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.*;
 import org.springframework.format.annotation.DateTimeFormat;
 
@@ -17,7 +16,7 @@ public class TodoDto {
     private Long id;
     private String content;
 
-    @DateTimeFormat(pattern = "yyyyMMdd")
+    @DateTimeFormat(pattern = "yyyy-MM-dd")
     private LocalDate todoDate;
 
     private LocalDateTime createDate;

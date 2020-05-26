@@ -200,10 +200,10 @@ html, body{
         color: #0b0809;
     }
     .input-list > div{
-        font-size: 10px;
+        font-size: 13px;
         width: 60%;
         float: left;
-        color: #ddaf35;
+        color: #0b0809;
     }
     .del-data{
         display: block;

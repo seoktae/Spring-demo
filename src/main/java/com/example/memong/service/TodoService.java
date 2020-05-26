@@ -6,6 +6,9 @@ import com.example.memong.repository.TodoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.security.Principal;
+import java.time.LocalDate;
+
 @Service
 public class TodoService {
 
@@ -15,5 +18,13 @@ public class TodoService {
 
     public Todo insert(TodoDto todo) {
         return todoRepository.save(todo.toEntity());
+    }
+
+    public Iterable<Todo> list(LocalDate date, String name) {
+        return todoRepository.findByUserNameAndTodoDate(name, date);
+    }
+
+    public void delete(Long id, Principal principal) {
+        todoRepository.deleteByIdAndUserName(id, principal.getName());
     }
 }
