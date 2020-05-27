@@ -33,7 +33,9 @@
             </div>
         </div>
         <div class="content-right">
-            <a class="logout" sec:authorize="hasRole('ROLE_USER')" href="/logout">로그아웃</a>
+            <a class="logout" sec:authorize="hasRole('ROLE_USER')" href="/logout">
+                <img class="logout-img" src="images/logout.jpg">
+            </a>
             <table id="calendar" align="center" class="calendar">
                 <thead>
                 <tr class="btn-wrap clearfix">

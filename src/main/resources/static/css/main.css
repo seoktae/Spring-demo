@@ -118,6 +118,9 @@ html, body{
 .logout{
     padding-left: 400px;
 }
+.logout-img{
+    width: 50px;
+}
 .calendar{
     padding: 50px 10px 20px;
     width: 100%;

@@ -52,3 +52,5 @@ logging:
 spring:
   banner:
     location: banner.txt
+  profiles:
+    include: oauth

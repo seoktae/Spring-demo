@@ -6,6 +6,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
+import javax.servlet.http.HttpSession;
+
 @Controller
 @RequestMapping("/user")
 public class UserContorller {
@@ -33,6 +35,11 @@ public class UserContorller {
     @ResponseBody
     public int idCheck(@PathVariable("id") String username) {
         return service.idCheck(username);
+    }
+
+    @GetMapping("/loginNaver")
+    public String loingNaver(HttpSession session) {
+        return "/user/naverlogincallback";
     }
 
 
